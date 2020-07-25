@@ -1,0 +1,22 @@
+problem : avrdude: ser_open(): can't open device "/dev/ttyUSB0": Permission denied
+
+The port permission denied while uploding a code.
+
+
+####################################################################################################33###############################
+
+
+Solution:
+
+1.Find your port to which the Arduino is connected (e.g. mine was /dev/ttyUSB0). You may find it mentioned in the error message in Arduino IDE.
+
+2. Open the terminal
+
+3. type "sudo chmod 777 /dev/ttyUSB0"  (before typing connect your arduino to computer)
+
+
+
+
+##########################################
+
+#first check your USB0 number accrording to change USBx .... x=0,1,2,3
